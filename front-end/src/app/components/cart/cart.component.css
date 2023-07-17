@@ -1,0 +1,313 @@
+/* Estilos CSS para el componente de carrito */
+
+/* Contenedor principal */
+
+.mainContainer {
+    min-height: 100vh;
+  }
+  
+  
+  .container {
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: -moz -fit-content;
+  }
+  
+  .pagar-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagar-button {
+    width: 200px;
+  }
+    .container{
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Encabezado */
+    .encabezado {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #c4c4c4;
+      padding: 10px;
+      font-weight: bold;
+    }
+  
+    /* Estilos para las celdas del encabezado */
+    .encabezado > div {
+      flex: 1;
+      padding: 5px;
+      text-align: center;
+    }
+  
+    /* Lista de productos */
+    .lista-productos {
+      border: 1px solid #707070;
+      margin-top: 10px;
+    }
+  
+    /* Estilos para cada item de producto */
+    .item-producto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 10px;
+    }
+  
+    /* Estilos para las celdas de cada item de producto */
+    .item-producto > div {
+      flex: 1;
+      padding: 5px;
+      text-align: center;
+    }
+  
+    /* Estilos para el boton de seleccionar*/
+    .seleccionar {
+      width: 10px;
+      height: 10px;
+      background-color: #c4c4c4; /* Color normal del botón */
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    /* Estilos para el botón seleccionar cuando se presiona */
+    .seleccionar:active {
+      background-color: #0654ae; /* Color cuando se presiona el botón */
+    }
+  
+    /* Estilos para los botones -/+ y el cuadrado de cantidad */
+  .cantidad-productos {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+  }
+  
+  .cantidad-productos button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cantidad-indicador {
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0px;
+  }
+  
+  
+  
+    /* Estilos para el botón Borrar */
+    .borrar button {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Resumen del total */
+    .resumen-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0654ae;
+      padding: 10px;
+      margin-top: 10px;
+      color: white;
+    }
+  
+    /* Estilos para la etiqueta "Total" */
+    .total-etiqueta {
+      flex: 1;
+      padding: 5px;
+      text-align: right;
+    }
+  
+    /* Estilos para la suma de todos los productos */
+    .total-suma {
+      flex: 1;
+      padding: 5px;
+      text-align: center;
+    }
+  
+    .imagen > img{
+      height: 100px;
+    }
+  
+  
+    @media(max-width: 850px) {
+      .container {
+        max-width: 600px;
+      }
+  
+      .cantidad-productos button {
+        width: 20px;
+        height: 20px;
+      }
+  
+      .cantidad-indicador {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+      }
+  
+      .encabezado > div {
+        padding-right: 15px;
+        padding-left: 21px;
+      }
+  
+      .imagen > img {
+        width: 90px
+      }
+    }
+  
+    @media(max-width: 630px) {
+      .container {
+        max-width: 500px;
+      }
+  
+      .cantidad-productos button {
+        width: 15px;
+        height: 15px;
+      }
+  
+      .cantidad-indicador {
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+      }
+  
+      .imagen > img{
+        height: 80px;
+      }
+  
+      .imagen {
+        width: 80px;
+      }
+  
+      .item-producto {
+        font-size: 10px;
+        padding-left: 0;
+      }
+  
+      .borrar button {
+        height: 18px;
+        font-size: 10px;
+      }
+  
+      .encabezado > div {
+        padding-right: 15px;
+        padding-left: 12px;
+        font-size: 12px;
+      }
+  
+      .resumen-total {
+        font-size: 12px;
+      }
+  
+      .pagar-button {
+        font-size: 13px;
+      }
+    }
+  
+    @media(max-width: 520px){
+      .container {
+        max-width: 400px;
+      }
+  
+      .imagen > img {
+        width: 70px;
+      }
+  
+      .encabezado > div {
+        padding-right: 15px;
+        padding-left: 12px;
+        font-size: 10px;
+      }
+  
+      .item-producto .imagen {
+        padding: 0 0 0 5px;
+      }
+    }
+  
+  
+    @media(max-width: 420px){
+      .container {
+        max-width: 300px;
+      }
+  
+      .encabezado > div {
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 10px;
+      }
+  
+      .imagen > img {
+        width: 60px;
+      }
+  
+      .item-producto .imagen {
+        padding: 0;
+      }
+  
+      .item-producto {
+        font-size: 8px;
+      }
+  
+      .encabezado > div {
+        padding-left: 8px;
+        font-size: 10px;
+      }
+  
+  
+      .cantidad-productos button {
+        width: 12px;
+        height: 12px;
+      }
+  
+      .cantidad-indicador {
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+      }
+  
+      .borrar button {
+        height: 14px;
+        font-size: 7px;
+      }
+  
+      .encabezado .cantidad{
+        padding-left: 5px;
+      }
+  
+      .encabezado .total {
+        padding-left: 0;
+      }
+  
+      .pagar-button {
+        font-size: 12px;
+      }
+    }
